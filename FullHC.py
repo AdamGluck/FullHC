@@ -49,7 +49,7 @@ class FullHC:
     def next_labeled_hc(self, hc, bm, method, metric, clip, t):
         """
         This function takes a hc and a blockmodel and makes the next hc labeled
-        using the bm to index the initially labeled hc.
+        using the blockmodel to index the initially labeled hc.
         Note: HC is a list of node labels, and bm is a block model derived from that graph
         """
         next_hc = self.create_hc(bm, method=method, metric=metric, clip=clip, t=t) # create a hc from a bm 
